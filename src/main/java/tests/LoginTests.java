@@ -15,8 +15,8 @@ public class LoginTests extends BaseTest {
         homePage.goToN11()
                 .goToLoginPage()
                 .loginToN11("onur@swtestacademy.com", "11223344")
-                .verifyLoginPassword(("E-posta adresiniz veya şifreniz hatalı"))
-                .verifyLoginPassword(("E-posta adresiniz veya şifreniz hatalı"));
+                .verifyLoginPassword(("E-posta adresiniz veya ifreniz hatal"))
+                .verifyLoginPassword(("E-posta adresiniz veya ifreniz hatal"));
     }
  
     @Test (priority = 1)
@@ -28,7 +28,7 @@ public class LoginTests extends BaseTest {
         homePage.goToN11()
                 .goToLoginPage()
                 .loginToN11("","")
-                .verifyLoginUserName("Lütfen e-posta adresinizi girin.")
+                .verifyLoginUserName("Lutfen e-posta adresinizi girin.")
                 .verifyLoginPassword("Bu alanın doldurulması zorunludur.");
     }
 }
